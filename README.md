@@ -1,5 +1,7 @@
 # Go Dot Yourself!
 
+
+
 This is the **Go Dot Yourself** Github. Our program provides a service that converts person's image into pixelated character.
 
 <img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/product%20logo.png?raw=true" width="600px">
@@ -53,21 +55,8 @@ The website would be pretty simple and would not have many features.
 
 <img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/django.png?raw=true" width="250px">
 
-## Switch to another file
 
-All your files are listed in the file explorer. You can switch from one to another by clicking a file in the list.
-
-## Rename a file
-
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
-
-## Delete a file
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
-
-## Export a file
-
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+-----------
 
 
 # How to use Go Dot Yourself
