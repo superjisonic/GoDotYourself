@@ -171,7 +171,8 @@ class BGsubtractor():
         # self.img = cv2.resize(self.img, dsize=(512,512), interpolation=cv2.INTER_LINEAR) #to resize the image
         self.img2 = self.img.copy()  # a copy of original image
         self.mask = np.zeros(self.img.shape[:2], dtype=np.uint8)  # mask initialized to PR_BG
-        self.output = np.zeros(self.img.shape, np.uint8)  # output image to be shown
+        self.output = np.zeros(self.img.shape, np.uint8)  # output image
+        self.bg_result = np.zeros(self.img.shape, np.uint8) # output image with selected background color
         self.gray = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
 
         # input and output windows
@@ -209,7 +210,7 @@ class BGsubtractor():
                 result = cv2.imread(filename)
                 cv2.imshow('result', result)
             elif k == ord('s'):  # save image
-                cv2.imwrite('./data/dst.jpg', bg_result)
+                cv2.imwrite('./data/dst.jpg', self.bg_result)
                 print(" Result saved as image \n")
             elif k == ord('r'):  # reset everything
                 print("resetting \n")
@@ -222,7 +223,8 @@ class BGsubtractor():
                 self.value = self.DRAW_FG
                 self.img = self.img2.copy()
                 self.mask = np.zeros(self.img.shape[:2], dtype=np.uint8)  # mask initialized
-                self.output = np.zeros(self.img.shape, np.uint8)  # output image to be shown
+                self.output = np.zeros(self.img.shape, np.uint8)  # output image
+                self.bg_result = np.zeros(self.img.shape, np.uint8) # output image with selected background color
             elif k == ord('a'):  # auto remove
                 try:
                     self.auto = True
@@ -271,9 +273,9 @@ class BGsubtractor():
             # output with selected background color
             bg = np.full((self.img.shape[0], self.img.shape[1], 3), fill_value=self.bg_color, dtype=np.uint8)  #
             bg = cv2.bitwise_and(bg, bg, mask=mask3)  #
-            bg_result = self.output + bg
+            self.bg_result = self.output + bg
 
-            cv2.imshow('output', bg_result)
+            cv2.imshow('output', self.bg_result)
             # smoothing
             # gray = cv2.cvtColor(self.output, cv2.COLOR_BGR2GRAY)
             # ret, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
@@ -296,5 +298,5 @@ class BGsubtractor():
 
 if __name__ == '__main__':
     a = BGsubtractor()
-    a.run()
+    a.run() #a.bg_result is result image
     cv2.destroyAllWindows()
