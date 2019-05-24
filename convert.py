@@ -8,7 +8,6 @@ b, g, r = cv2.split(img)
 img = cv2.merge([r,g,b])
 
 img_resized = cv2.resize(img, dsize=(30 , 40)) #3:4 비율
-cv2.imwrite('change.jpg', img_resized)
 
 plt.subplot(221)
 plt.imshow(img, cmap=plt.cm.gray)
