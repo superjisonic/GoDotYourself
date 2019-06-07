@@ -44,7 +44,7 @@ def main():
 
     # The ouput image
     # Red pixels in the end result denote the unprocessed pixels
-    op = Image.new('RGB', (im_width, im_height), color='red')
+    op = Image.new('RGB', (im_width, im_height))
 
     for x in range(0, im_height - rem_height, n):
         for y in range(0, im_width - rem_width, n):
