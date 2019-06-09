@@ -65,14 +65,12 @@ The website would be pretty simple and would not have many features.
 **How a user obtains and install the software**
 
 - This software is website.  Therefore, the user can use the software by accessing the website without having to install the software separately.
-> (alpha release 한정  필요하지  않은  경우  제거) 
-> But in the alpha release, user need to install a separate program because developers have not yet linked the OpenCV code to the web.
+
 
 **How to run the software**
 
 - Users do not have to run a separate program, just access the website
-> (alpha release 한정  필요하지  않은  경우  제거) 
-> But in the alpha release, user need to run a separate program because developers have not yet linked the OpenCV code to the web.
+
 
 
 ### [A high-level description of the user view of your software]
