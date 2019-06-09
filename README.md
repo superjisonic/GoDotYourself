@@ -75,28 +75,30 @@ The website would be pretty simple and would not have many features.
 
 ### [A high-level description of the user view of your software]
 
-1. Upload an Image
-
-<img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui1.png?raw=true" width="600px">
-
-
-2. Select Masking Size
-
-<img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui2.png?raw=true" width="600px">
-
-
-
-3. Background removing/keeping feature
+1. Background removing/keeping feature
 
 <img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui3.png?raw=true" width="600px">
 
+Select whether to remove the background from the first page of the website by using the button
 
+2. Upload an Image
+
+<img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui1.png?raw=true" width="600px">
+
+Select whether to remove the background from the first page of the website by using the button
+
+3. Select Masking Size
+
+<img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui2.png?raw=true" width="600px">
+
+The masking size is determined automatically (by the pixelization code).
 
 4. Show the result of conversion - pixelated image of uploaded picture
 
 <img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui4.png?raw=true" width="600px">
 
-
+If you choose Remove Background, the website will automatically pixelize the uploaded image when you remove the background.
+If you do not remove the background, the website will automatically pixelize the uploaded image.
 
 5. Save or Share the result of conversion
 
