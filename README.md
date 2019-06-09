@@ -98,6 +98,7 @@ The masking size is determined automatically (by the pixelization code).
 <img src="https://github.com/carolsim/GoDotYourself/blob/master/ReadmeImage/ui4.png?raw=true" width="600px">
 
 If you choose Remove Background, the website will automatically pixelize the uploaded image when you remove the background.
+
 If you do not remove the background, the website will automatically pixelize the uploaded image.
 
 5. Save or Share the result of conversion
